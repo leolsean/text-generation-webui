@@ -14,7 +14,7 @@ warnings.filterwarnings('ignore', category=UserWarning, message='TypedStorage is
 def my_get(url, **kwargs):
     logger.info('Gradio HTTP request redirected to localhost :)')
     kwargs.setdefault('allow_redirects', True)
-    return requests.api.request('get', 'http://127.0.0.1/', **kwargs)
+    return requests.api.request('get', 'http://0.0.0.0/', **kwargs)
 
 
 original_get = requests.get

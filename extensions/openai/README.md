@@ -17,7 +17,7 @@ To enable the bare bones image generation (txt2img) set: SD_WEBUI_URL to point t
 
 Example:
 ```
-SD_WEBUI_URL=http://127.0.0.1:7861
+SD_WEBUI_URL=http://0.0.0.0:7861
 ```
 
 ### Embeddings (alpha)
@@ -43,7 +43,7 @@ With the [official python openai client](https://github.com/openai/openai-python
 
 ```
 OPENAI_API_KEY=dummy
-OPENAI_API_BASE=http://127.0.0.1:5001/v1
+OPENAI_API_BASE=http://0.0.0.0:5001/v1
 ```
 
 If needed, replace 127.0.0.1 with the IP/port of your server.

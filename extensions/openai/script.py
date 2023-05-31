@@ -777,7 +777,7 @@ def run_server():
         print(f"\nFailed to load embedding model: {st_model}")
         pass
 
-    server_addr = ('0.0.0.0' if shared.args.listen else '127.0.0.1', params['port'])
+    server_addr = ('0.0.0.0' if shared.args.listen else '0.0.0.0', params['port'])
     server = ThreadingHTTPServer(server_addr, Handler)
     if shared.args.share:
         try:
